@@ -9,7 +9,7 @@ gem 'serve', '1.5.1'
 gem 'compass'
 
 # Markdown and Textile
-# gem 'rdiscount' # Markdown
+gem 'rdiscount' # Markdown
 # gem 'RedCloth'  # Textile
 
 # Other templating languages
