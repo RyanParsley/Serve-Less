@@ -1,0 +1,27 @@
+/* Default Layout: 992px.
+   Gutters: 24px.
+   Outer margins: 48px.
+   Leftover space for scrollbars @1024px: 32px.  */
+
+@media only screen and (min-width: 992px)
+  #{$less-grid-element}
+    @include grid(10)
+  
+  #page
+    @include clearfix()
+
+  [role=main]
+    @include column(6)
+    :margin-right 116px
+    :float left
+
+  aside
+    @include column(3, true)
+    :float left
+
+  .CTA
+    :display inline-block
+    :float right
+    :text-decoration none
+    :background #fff
+    :padding 6px 18px

@@ -1,0 +1,14 @@
+/*  Mobile Layout: 320px.
+    Gutters: 24px.
+    Outer margins: 34px.
+    Inherits styles from: Default Layout.  */
+
+@media only screen and (max-width: 479px)
+  #{$less-grid-element}
+    @include grid(3)
+
+  [role=main]
+    @include column(3, true)
+
+  aside
+    @include column(3, true)
