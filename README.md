@@ -1,5 +1,13 @@
 What is this?
 =============
+It took me a little while to get serve set up the way I wanted to use
+it, so I thought I'd create this starting point. I haven't done any
+heroic programing efforts to the serve project. This project has a
+slightly modified version of the Less Framework ready to go in the way
+that I like to use it. 
+
+Here's the Serve Readme
+=======================
 
 This is a simple HTML prototype written in HAML or ERB that is designed to be
 viewed with Serve.
