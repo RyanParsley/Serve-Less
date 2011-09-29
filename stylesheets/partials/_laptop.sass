@@ -5,19 +5,19 @@
 
 @mixin laptop()
   #{$less-grid-element}
-    @include grid(10, false)
+    +grid(10, false)
 
   #page
-    @include clearfix()
+    +clearfix()
 
   [role=main]
-    @include padded-column(6, 3, false)
+    +padded-column(6, 3, false)
     :border solid 3px #333
     +skip-column(1,3, true)
     :float left
 
   aside
-    @include column(3, true)
+    +column(3, true)
     :float left
     :background #fff
 

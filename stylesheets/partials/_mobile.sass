@@ -4,7 +4,7 @@
     Inherits styles from: Default Layout.  */
 @mixin mobile()
   #{$less-grid-element}
-    @include grid(3)
+    @include grid(3, false)
 
   [role=main]
     @include column(3, true)
