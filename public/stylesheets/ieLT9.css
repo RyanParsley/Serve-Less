@@ -1,76 +1,192 @@
-/*
-Syntax error: Invalid CSS after "#fff": expected expression (e.g. 1px, bold), was ";"
-        on line 3 of ./stylesheets/partials/_ieLT9.sass
-        from line 39 of stylesheets/ieLT9.sass
+/* Less Framework 4
+ *
+ * http://lessframework.com
+ *
+ * by Joni Korpi
+ *
+ * License: http://creativecommons.org/licenses/MIT/ */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em,
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup,
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 
-1: body
-2:   :background #fff;
-3: 
-4: .testing
-5:   :color #f00;
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+  display: block;
+}
 
-Backtrace:
-./stylesheets/partials/_ieLT9.sass:3
-stylesheets/ieLT9.sass:39
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/scss/parser.rb:898:in `expected'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/script/lexer.rb:193:in `expected!'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/script/parser.rb:458:in `assert_done'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/script/parser.rb:50:in `parse'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/script/parser.rb:140:in `parse'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/script.rb:32:in `parse'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:809:in `parse_script'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:585:in `parse_property'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:536:in `parse_line'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:448:in `build_tree'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:467:in `block in append_children'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:466:in `each'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:466:in `append_children'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:457:in `block in build_tree'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:450:in `each'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:450:in `build_tree'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:467:in `block in append_children'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:466:in `each'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:466:in `append_children'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:323:in `_to_tree'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:252:in `to_tree'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:144:in `visit_import'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/tree/root_node.rb:20:in `render'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:293:in `_render'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:240:in `render'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:319:in `update_stylesheet'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:181:in `block (2 levels) in update_stylesheets'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:175:in `each'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:175:in `block in update_stylesheets'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:173:in `each'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:173:in `update_stylesheets'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/plugin.rb:81:in `update_stylesheets'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/plugin.rb:54:in `check_for_updates'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/plugin/rack.rb:51:in `call'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.3.2/lib/rack/lint.rb:48:in `_call'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.3.2/lib/rack/lint.rb:36:in `call'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.3.2/lib/rack/showexceptions.rb:24:in `call'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.3.2/lib/rack/commonlogger.rb:20:in `call'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.3.2/lib/rack/chunked.rb:41:in `call'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.3.2/lib/rack/content_length.rb:14:in `call'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/rack-1.3.2/lib/rack/handler/webrick.rb:59:in `service'
-/Users/ryan/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-/Users/ryan/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-/Users/ryan/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"#fff\": expected expression (e.g. 1px, bold), was \";\"\A         on line 3 of ./stylesheets/partials/_ieLT9.sass\A         from line 39 of stylesheets/ieLT9.sass\A \A 1: body\A 2:   :background #fff;\A 3: \A 4: .testing\A 5:   :color #f00;"; }
+a img {
+  border: 0;
+}
+
+.biggest, h1 {
+  font-size: 42px;
+  line-height: 48px;
+}
+
+.bigger, h2 {
+  font-size: 26px;
+  line-height: 36px;
+}
+
+.big, h3 {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+body {
+  font: 16px/24px Georgia, serif;
+}
+
+.small, small {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.container, nav ul {
+  margin: 0 auto;
+  padding: 24px;
+}
+
+html {
+  background: #999999;
+}
+
+body {
+  background: #e8e8e8;
+  color: #3c3c3c;
+  -webkit-text-size-adjust: 100%;
+}
+
+header[role=banner] {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+footer[role=banner] {
+  background: #999999;
+}
+
+[role=main] {
+  background: white;
+}
+
+nav {
+  background: #888888;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-decoration: none;
+  padding: 6px;
+}
+nav ul li a.active {
+  background: rgba(0, 0, 0, 0.3);
+  color: #cccccc;
+}
+
+::selection {
+  background: rgb(255,255,158);
+}
+
+::-moz-selection {
+  background: rgb(255,255,158);
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+body {
+  -webkit-tap-highlight-color: rgb(255,255,158);
+}
+
+/* Default Layout: 992px.
+ * Gutters: 24px.
+ * Outer margins: 48px.
+ * Leftover space for scrollbars @1024px: 32px.  */
+@media only screen and (min-width: 992px) {
+  .container, nav ul {
+    width: 896px;
+    padding: 24px;
+  }
+
+  #page {
+    overflow: hidden;
+    *zoom: 1;
+  }
+
+  [role=main] {
+    width: 528px;
+    margin-right: 24px;
+    margin-right: 116px;
+    float: left;
+  }
+
+  aside {
+    width: 252px;
+    float: left;
+  }
+
+  .CTA {
+    display: inline-block;
+    float: right;
+    text-decoration: none;
+    background: white;
+    padding: 6px 18px;
+  }
+}
+.container, nav ul {
+  width: 896px;
+  padding: 24px;
+}
+
+#page {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+[role=main] {
+  width: 528px;
+  margin-right: 24px;
+  margin-right: 116px;
+  float: left;
+}
+
+aside {
+  width: 252px;
+  float: left;
+}
+
+.CTA {
+  display: inline-block;
+  float: right;
+  text-decoration: none;
+  background: white;
+  padding: 6px 18px;
+}
+
+body {
+  background: white;
+}
+
+.testing {
+  color: red;
+}
