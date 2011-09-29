@@ -122,7 +122,6 @@ body {
 @media only screen and (min-width: 992px) {
   .container, nav ul {
     width: 896px;
-    padding: 24px;
   }
 
   #page {
@@ -132,14 +131,21 @@ body {
 
   [role=main] {
     width: 528px;
-    margin-right: 24px;
-    margin-right: 116px;
+    padding: 10px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    margin-left: -13px;
+    margin-right: -13px;
+    margin-right: 11px;
+    border: solid 3px #333333;
+    margin-right: 103px;
     float: left;
   }
 
   aside {
     width: 252px;
     float: left;
+    background: white;
   }
 
   .CTA {
