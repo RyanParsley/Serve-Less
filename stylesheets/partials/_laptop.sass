@@ -3,7 +3,7 @@
    Outer margins: 48px.
    Leftover space for scrollbars @1024px: 32px.  */
 
-@media only screen and (min-width: 992px)
+@mixin laptop()
   #{$less-grid-element}
     @include grid(10)
   
@@ -25,3 +25,6 @@
     :text-decoration none
     :background #fff
     :padding 6px 18px
+
+@media only screen and (min-width: 992px)
+  +laptop()

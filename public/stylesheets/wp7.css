@@ -1,39 +1,20 @@
 /*
-Syntax error: Invalid CSS after "#fff": expected expression (e.g. 1px, bold), was ";"
-        on line 3 of ./stylesheets/partials/_ieLT9.sass
-        from line 39 of stylesheets/ieLT9.sass
-
-1: body
-2:   :background #fff;
-3: 
-4: .testing
-5:   :color #f00;
+Syntax error: File to import not found or unreadable: partials/wp7.
+              Load paths:
+                Compass::SpriteImporter
+                /Users/ryan/Projects/serve-less/public/stylesheets/sass
+                /Users/ryan/Projects/serve-less/stylesheets
+                /Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.5/frameworks/blueprint/stylesheets
+                /Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.5/frameworks/compass/stylesheets
+        on line 37 of stylesheets/wp7.sass
 
 Backtrace:
-./stylesheets/partials/_ieLT9.sass:3
-stylesheets/ieLT9.sass:39
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/scss/parser.rb:898:in `expected'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/script/lexer.rb:193:in `expected!'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/script/parser.rb:458:in `assert_done'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/script/parser.rb:50:in `parse'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/script/parser.rb:140:in `parse'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/script.rb:32:in `parse'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:809:in `parse_script'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:585:in `parse_property'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:536:in `parse_line'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:448:in `build_tree'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:467:in `block in append_children'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:466:in `each'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:466:in `append_children'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:457:in `block in build_tree'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:450:in `each'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:450:in `build_tree'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:467:in `block in append_children'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:466:in `each'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:466:in `append_children'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:323:in `_to_tree'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/engine.rb:252:in `to_tree'
-/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:144:in `visit_import'
+stylesheets/wp7.sass:37
+/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/tree/import_node.rb:64:in `rescue in import'
+/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/tree/import_node.rb:42:in `import'
+/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/tree/import_node.rb:25:in `imported_file'
+/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:148:in `rescue in visit_import'
+/Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:153:in `visit_import'
 /Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:18:in `visit'
 /Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -73,4 +54,4 @@ stylesheets/ieLT9.sass:39
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"#fff\": expected expression (e.g. 1px, bold), was \";\"\A         on line 3 of ./stylesheets/partials/_ieLT9.sass\A         from line 39 of stylesheets/ieLT9.sass\A \A 1: body\A 2:   :background #fff;\A 3: \A 4: .testing\A 5:   :color #f00;"; }
+  content: "Syntax error: File to import not found or unreadable: partials/wp7.\A               Load paths:\A                 Compass::SpriteImporter\A                 /Users/ryan/Projects/serve-less/public/stylesheets/sass\A                 /Users/ryan/Projects/serve-less/stylesheets\A                 /Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.5/frameworks/blueprint/stylesheets\A                 /Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.5/frameworks/compass/stylesheets\A         on line 37 of stylesheets/wp7.sass"; }

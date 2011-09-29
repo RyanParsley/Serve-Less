@@ -28,7 +28,7 @@
     /[if IE]
       = javascript_include_tag("http://html5shiv.googlecode.com/svn/trunk/html5.js")
 
-  %body
+  %body{:class => @bodyClass}
     = render 'header' 
     #page.container
       %h1= @title 

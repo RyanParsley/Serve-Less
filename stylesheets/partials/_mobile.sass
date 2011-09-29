@@ -2,8 +2,7 @@
     Gutters: 24px.
     Outer margins: 34px.
     Inherits styles from: Default Layout.  */
-
-@media only screen and (max-width: 479px)
+@mixin mobile()
   #{$less-grid-element}
     @include grid(3)
 
@@ -12,3 +11,6 @@
 
   aside
     @include column(3, true)
+
+@media only screen and (max-width: 479px)
+  +mobile()
