@@ -3,6 +3,21 @@
   :margin 0 auto
   :padding 0px 24px
 
+$primaryBGColor: #fff
+$primaryColor: rgb(60,60,60)
+
+$secondaryBGColor:  rgb(232,232,232)
+$secondaryColor: #999
+
+$buttonBGColor: #888
+$buttonColor: rgba(0,0,0,.5)
+
+$buttonBGColorActive: rgba(0,0,0,.3)
+$buttonColorActive: #ccc
+
+$footerBGColor: #999
+$headerBGColor: rgba(0,0,0,.2)
+
 h1
   @extend .biggest
 
@@ -16,46 +31,51 @@ small
   @extend .small
 
 html
-  :background #999
+  :background $footerBGColor
 
 body
-  :background rgb(232,232,232)
-  :color rgb(60,60,60)
+  :background $secondaryBGColor
+  :color $primaryColor
 
   // Stops Mobile Safari from auto-adjusting font-sizes
   -webkit-text-size-adjust: 100%
 
 header[role= banner]
-  :background rgba(0,0,0,.3)
+  :background $headerBGColor
   :padding-top 24px
   :padding-bottom 24px
 
 body>footer
   :padding-top 24px
-  :background #999
+  :background $footerBGColor
 
 #page
   :padding-top 24px
   :padding-bottom 24px
 
 [role=main]
-  :background #fff
+  :background $primaryBGColor
 
 nav
-  :background #888
+  :background $footerBGColor
   ul
     :list-style none
-    li
-      :display inline-block
-      a
-        :display block
-        :background rgba(0,0,0,.5)
-        :color #fff
-        :text-decoration none
-        :padding 6px
-        &.active
-          :background rgba(0,0,0,.3)
-          :color #ccc
+  li
+    :display inline-block
+  a
+    :display block
+    :background $buttonBGColor
+    :color $buttonColor
+    :text-decoration none
+    :padding 6px
+    &.active
+      :background $buttonBGColorActive
+      :color $buttonColorActive
+.CTA
+  :background $primaryBGColor
+
+aside
+  :background $primaryBGColor
 
 // Selection colors (easy to forget)
 +selection-color(unquote("rgb(255,255,158)"))
