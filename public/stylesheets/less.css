@@ -68,7 +68,7 @@ header[role=banner] {
   padding-bottom: 24px;
 }
 
-footer[role=banner] {
+body > footer {
   padding-top: 24px;
   background: #999999;
 }
