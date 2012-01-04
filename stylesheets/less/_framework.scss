@@ -22,7 +22,15 @@ $less-font-family: Arial, sans-serif !default;
   }
 }
 
-@mixin skip-column($columns, $border-width: 0px, $padded: false){
+@mixin prepend-column($columns, $border-width: 0px, $padded: false){
+  @if $padded{
+    margin-left: (($columns * 68px) + (24px * ($columns)) - 10px - $border-width);
+  } @else {
+    margin-left: (($columns * 68px) + (24px * ($columns)));
+  }
+}
+
+@mixin append-column($columns, $border-width: 0px, $padded: false){
   @if $padded{
     margin-right: (($columns * 68px) + (24px * ($columns + 1)) - 10px - $border-width);
   } @else {
