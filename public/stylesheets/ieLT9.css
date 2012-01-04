@@ -146,7 +146,7 @@ body {
   }
 
   [role=main] {
-    width: 436px;
+    width: 528px;
     padding: 10px;
     margin-top: 13px;
     margin-bottom: 13px;
@@ -155,7 +155,6 @@ body {
     margin-right: 13px;
     border: solid 1px #3c3c3c;
     margin-right: 105px;
-    margin-left: 81px;
     float: left;
   }
 
@@ -191,7 +190,7 @@ body {
 }
 
 [role=main] {
-  width: 436px;
+  width: 528px;
   padding: 10px;
   margin-top: 13px;
   margin-bottom: 13px;
@@ -200,7 +199,6 @@ body {
   margin-right: 13px;
   border: solid 1px #3c3c3c;
   margin-right: 105px;
-  margin-left: 81px;
   float: left;
 }
 

@@ -4,7 +4,6 @@ $less-font-family: Arial, sans-serif !default;
 
 @mixin grid($columns, $padding: $less-grid-padding) {
   @include column($columns, true);
-
   @if $padding == true {
     @include grid-padding($columns);
   }
