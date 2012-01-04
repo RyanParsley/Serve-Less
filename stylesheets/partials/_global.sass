@@ -30,6 +30,26 @@ h3
 small
   @extend .small
 
+input, textarea
+  :padding .5em
+  :font-size 21px
+  :font-family arial
+  :border 1px solid #333
+  :display block
+
+textarea
+  :resize none
+  :width 100%
+  +padded-column(3, 1)
+  +prepend-column(.5,1,true)
+
+input[type=text], input[type=password], input[type=url]
+  +padded-column(3,1)
+  +prepend-column(.5,1,true)
+
+input[type=submit]
+  +button($buttonBGColor, $buttonColor, $buttonColor, $buttonBGColorActive, $buttonColorActive)
+  +prepend-column(.5,1,true)
 html
   :background $footerBGColor
 

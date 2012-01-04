@@ -13,3 +13,39 @@
     @return lighten($color, 20% * $multiplier);
   }
 }
+
+@mixin button($background-color, $border-color, $color, $background-color-hover, $color-hover){
+  background:$background-color;
+  background:$background-color url(../img/lightNoise.png); 
+  -o-box-shadow:        0 2px 6px rgba(0,0,0,0.2), 
+                        inset 0 1px rgba(255,255,255,0.2),  
+                        inset 0 10px 20px rgba(255,255,255,0.1), 
+                        inset 0 -15px 30px rgba(0,0,0,0.3);
+  -webkit-box-shadow:   0 2px 6px rgba(0,0,0,0.2), 
+                        inset 0 1px rgba(255,255,255,0.2),  
+                        inset 0 10px 20px rgba(255,255,255,0.1), 
+                        inset 0 -15px 30px rgba(0,0,0,0.3);
+  -moz-box-shadow: 	    0 2px 6px rgba(0,0,0,0.2), 
+                        inset 0 1px rgba(255,255,255,0.2),  
+                        inset 0 10px 20px rgba(255,255,255,0.1), 
+                        inset 0 -15px 30px rgba(0,0,0,0.3);
+  box-shadow: 		      0 2px 6px rgba(0,0,0,0.2), 
+                        inset 0 1px rgba(255,255,255,0.2),  
+                        inset 0 10px 20px rgba(255,255,255,0.1), 
+                        inset 0 -15px 30px rgba(0,0,0,0.3); 
+  border:solid 2px $border-color;
+  text-decoration:none;
+  color:$color;
+  text-shadow:1px 1px 1px rgba(255,255,255,.5); 
+  font-size:18px;
+  &:hover, &.active, &.active-trail{
+    color:$color-hover;
+    background:$background-color-hover;
+    box-shadow: none;
+    -o-box-shadow: none;
+    -webkit-box-shadow:none;
+    -moz-box-shadow: none;
+    text-shadow:none;
+    border:solid 2px $background-color-hover;
+  }
+}
