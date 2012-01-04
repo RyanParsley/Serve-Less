@@ -11,20 +11,20 @@
     +clearfix()
 
   [role=main]
-    +padded-column(6, 3, false)
-    :border solid 3px $primaryColor
-    +skip-column(1,3, true)
+    +padded-column(6, 1, false)
+    :border solid 1px $primaryColor
+    +skip-column(1,1, true)
     :float left
 
   aside
-    +column(3, true)
+    +padded-column(3,0, true)
     :float left
 
   .CTA
     :display inline-block
+    +padded-column(3, 0, true)
     :float right
     :text-decoration none
-    :padding 6px 18px
 
 @media only screen and (min-width: 992px)
   +laptop()

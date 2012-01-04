@@ -11,9 +11,15 @@
     +clearfix()
 
   [role=main]
-    @include column(5)
+    @include padded-column(5,0)
     :float left
 
+  .CTA
+    :display inline-block
+    +padded-column(3, 0, true)
+    :float right
+    :text-decoration none
+
   aside
-    @include column(3, true)
+    @include padded-column(3,0, true)
     :float left

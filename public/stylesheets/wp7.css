@@ -142,10 +142,31 @@ body {
 
   [role=main] {
     width: 252px;
+    padding: 10px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    margin-left: -10px;
+    margin-right: -10px;
   }
 
   aside {
     width: 252px;
+    padding: 10px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .CTA {
+    display: inline-block;
+    width: 252px;
+    padding: 10px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    margin-left: -10px;
+    margin-right: -10px;
+    text-decoration: none;
   }
 }
 .container, nav ul {
@@ -154,8 +175,29 @@ body {
 
 [role=main] {
   width: 252px;
+  padding: 10px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 aside {
   width: 252px;
+  padding: 10px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.CTA {
+  display: inline-block;
+  width: 252px;
+  padding: 10px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  margin-left: -10px;
+  margin-right: -10px;
+  text-decoration: none;
 }

@@ -7,10 +7,15 @@
     @include grid(3, false)
 
   [role=main]
-    @include column(3, true)
+    @include padded-column(3, 0, true)
 
   aside
-    @include column(3, true)
+    @include padded-column(3, 0, true)
+
+  .CTA
+    :display inline-block
+    +padded-column(3, 0, true)
+    :text-decoration none
 
 @media only screen and (max-width: 479px)
   +mobile()

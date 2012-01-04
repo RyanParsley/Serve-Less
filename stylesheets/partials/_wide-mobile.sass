@@ -8,7 +8,13 @@
     @include grid(5, false)
 
   [role=main]
-    @include column(5, true)
+    @include padded-column(5,0, true)
+
+  .CTA
+    :display inline-block
+    +padded-column(2, 0, true)
+    :float right
+    :text-decoration none
 
   aside
-    @include column(5, true)
+    @include padded-column(5,0, true)
