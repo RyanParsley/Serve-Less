@@ -50,6 +50,7 @@ input[type=text], input[type=password], input[type=url]
 input[type=submit]
   +button($buttonBGColor, $buttonColor, $buttonColor, $buttonBGColorActive, $buttonColorActive)
   +prepend-column(.5,1,true)
+
 html
   :background $footerBGColor
 
@@ -91,6 +92,7 @@ nav
     &.active
       :background $buttonBGColorActive
       :color $buttonColorActive
+
 .CTA
   :background $primaryBGColor
 
@@ -99,3 +101,25 @@ aside
 
 // Selection colors (easy to forget)
 +selection-color(unquote("rgb(255,255,158)"))
+
+.first
+  +padded-column(2,1)
+  +prepend-column(1,1,true)
+  +append-column(1,1,true)
+  :border 1px solid #333
+  :background #fff
+  :float left
+.second
+  +column(2)
+  +prepend-column(1)
+  :background #fff
+  :float left
+.third
+  +padded-column(2,1,true)
+  +prepend-column(1,1, true)
+  :border 1px solid #333
+  :background #fff
+  :float left
+
+@each $animal in puma, sea-slug, egret, salamander
+  +classBG($animal)

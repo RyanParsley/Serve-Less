@@ -188,6 +188,58 @@ body {
   -webkit-tap-highlight-color: rgb(255,255,158);
 }
 
+.first {
+  width: 160px;
+  padding: 10px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  margin-left: -11px;
+  margin-right: -11px;
+  margin-right: 13px;
+  margin-left: 81px;
+  margin-right: 105px;
+  border: 1px solid #333333;
+  background: white;
+  float: left;
+}
+
+.second {
+  width: 160px;
+  margin-right: 24px;
+  margin-left: 92px;
+  background: white;
+  float: left;
+}
+
+.third {
+  width: 160px;
+  padding: 10px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  margin-left: -11px;
+  margin-right: -11px;
+  margin-left: 81px;
+  border: 1px solid #333333;
+  background: white;
+  float: left;
+}
+
+.puma {
+  background-image: url(../img/puma);
+}
+
+.sea-slug {
+  background-image: url(../img/sea-slug);
+}
+
+.egret {
+  background-image: url(../img/egret);
+}
+
+.salamander {
+  background-image: url(../img/salamander);
+}
+
 /* Default Layout: 992px.
  * Gutters: 24px.
  * Outer margins: 48px.
