@@ -31,5 +31,8 @@
       %h1= @title
       %section{:role => "main"}
         = yield
-      = render 'aside'
+      - if @aside
+        = render @aside
+      - else
+        = render 'aside'
     = render 'footer'
