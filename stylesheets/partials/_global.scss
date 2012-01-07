@@ -45,7 +45,8 @@ textarea {
 
 input[type=text], input[type=password], input[type=url] {
   @include padded-column(3, 1);
-  @include prepend-column(0.5, 1, true); }
+  @include prepend-column(0.5, 1, true); 
+}
 
 input[type=submit] {
   @include button($buttonBGColor, $buttonColor, $buttonColor, $buttonBGColorActive, $buttonColorActive);
@@ -122,5 +123,10 @@ aside {
   background: white;
   float: left; }
 
-@each $animal in puma, sea-slug, egret, salamander {
+$animals: puma,
+          sea-slug,
+          egret,
+          salamander;
+
+@each $animal in $animals{
   @include classBG($animal); }

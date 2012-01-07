@@ -1,12 +1,12 @@
 /*
 Syntax error: Undefined mixin 'button'.
-        on line 51 of ./stylesheets/partials/_global.scss, in `button'
-        from line 51 of ./stylesheets/partials/_global.scss
+        on line 52 of ./stylesheets/partials/_global.scss, in `button'
+        from line 52 of ./stylesheets/partials/_global.scss
         from line 25 of ./stylesheets/wp7.scss
 
 Backtrace:
-./stylesheets/partials/_global.scss:51:in `button'
-./stylesheets/partials/_global.scss:51
+./stylesheets/partials/_global.scss:52:in `button'
+./stylesheets/partials/_global.scss:52
 ./stylesheets/wp7.scss:25
 /Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.12/lib/sass/tree/visitors/perform.rb:170:in `visit_mixin'
 /Users/ryan/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.12/lib/sass/tree/visitors/base.rb:37:in `visit'
@@ -61,4 +61,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'button'.\A         on line 51 of ./stylesheets/partials/_global.scss, in `button'\A         from line 51 of ./stylesheets/partials/_global.scss\A         from line 25 of ./stylesheets/wp7.scss"; }
+  content: "Syntax error: Undefined mixin 'button'.\A         on line 52 of ./stylesheets/partials/_global.scss, in `button'\A         from line 52 of ./stylesheets/partials/_global.scss\A         from line 25 of ./stylesheets/wp7.scss"; }

@@ -1,6 +1,9 @@
 $less-grid-element: unquote("body") !default;
 $less-grid-padding: true !default;
 $less-font-family: Arial, sans-serif !default;
+$column-width: 68px !default;
+$gutter-width: 24px !default;
+$column-padding: 10px !default;
 
 @mixin grid($columns, $padding: $less-grid-padding) {
   @include column($columns, true);
@@ -23,36 +26,36 @@ $less-font-family: Arial, sans-serif !default;
 
 @mixin prepend-column($columns, $border-width: 0px, $padded: false){
   @if $padded{
-    margin-left: (($columns * 68px) + (24px * ($columns)) - 10px - $border-width);
+    margin-left: (($columns * $column-width) + ($gutter-width * ($columns)) - $column-padding - $border-width);
   } @else {
-    margin-left: (($columns * 68px) + (24px * ($columns)));
+    margin-left: (($columns * $column-width) + ($gutter-width * ($columns)));
   }
 }
 
 @mixin append-column($columns, $border-width: 0px, $padded: false){
   @if $padded{
-    margin-right: (($columns * 68px) + (24px * ($columns + 1)) - 10px - $border-width);
+    margin-right: (($columns * $column-width) + ($gutter-width * ($columns + 1)) - $column-padding - $border-width);
   } @else {
-    margin-right: (($columns * 68px) + (24px * ($columns + 1)));
+    margin-right: (($columns * $column-width) + ($gutter-width * ($columns + 1)));
   }
 }
 
 @mixin padded-column($columns, $border-width: 0px, $last: false){
-  width: (68px * $columns) + (24px * ($columns - 1));
-  padding: 10px;
-  margin-top: 24px - 10px - $border-width;
-  margin-bottom: 24px - 10px - $border-width;
-  margin-left: -(10px + $border-width);
-  margin-right: -(10px + $border-width);
+  width: ($column-width * $columns) + ($gutter-width * ($columns - 1));
+  padding: $column-padding;
+  margin-top: $gutter-width - $column-padding - $border-width;
+  margin-bottom: $gutter-width - $column-padding - $border-width;
+  margin-left: -($column-padding + $border-width);
+  margin-right: -($column-padding + $border-width);
   @if $last != true {
-    margin-right: 14px - $border-width;
+    margin-right: $gutter-width - $column-padding - $border-width;
   }
 }
 
 @mixin column($columns, $last: false) {
-  width: (68px * $columns) + (24px * ($columns - 1));
+  width: ($column-width * $columns) + ($gutter-width * ($columns - 1));
   @if $last != true {
-    margin-right: 24px;
+    margin-right: $gutter-width;
   }
 }
 
