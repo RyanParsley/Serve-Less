@@ -35,17 +35,22 @@ input, textarea {
   font-size: 21px;
   font-family: arial;
   border: 1px solid #333333;
-  display: block; }
+  display: block; 
+  @include border-radius(3px);
+}
 
 textarea {
   resize: none;
   width: 100%;
   @include padded-column(3, 1);
-  @include prepend-column(0.5, 1, true); }
+  @include prepend-column(0.5, 1, true); 
+  @include box-shadow(inset 6px 6px 12px rgba(0,0,0,.2));
+}
 
 input[type=text], input[type=password], input[type=url] {
   @include padded-column(3, 1);
   @include prepend-column(0.5, 1, true); 
+  @include box-shadow(inset 6px 6px 12px rgba(0,0,0,.2));
 }
 
 input[type=submit] {
@@ -89,12 +94,17 @@ nav {
     color: $buttonColor;
     text-decoration: none;
     padding: 6px;
-    &.active {
+    &.active, &:hover {
       background: $buttonBGColorActive;
       color: $buttonColorActive; } } }
 
 .CTA {
-  background: $primaryBGColor; }
+  background: $primaryBGColor; 
+  @include border-radius(6px);
+  &:hover{
+    background: darken($primaryBGColor, 20%);
+  }
+}
 
 aside {
   background: $primaryBGColor; }
@@ -111,9 +121,10 @@ aside {
   float: left; }
 
 .second {
-  @include column(2);
-  @include prepend-column(1);
+  @include padded-column(2, 1);
+  @include prepend-column(1, 1, true);
   background: white;
+  border: 1px solid #333333;
   float: left; }
 
 .third {
